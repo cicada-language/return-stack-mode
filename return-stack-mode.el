@@ -302,7 +302,7 @@
 
 
 (make-faces
- (return-stack-exit-face             ((default (:foreground "#00ffff" :bold t))))
+ (return-stack-end-face             ((default (:foreground "#00ffff" :bold t))))
  (return-stack-syntax-key-word-face  ((default (:foreground "#f92672" :bold t))))
 
  (return-stack-number-face           ((default (:foreground "Pink4"))))
@@ -427,9 +427,9 @@
  `(;; in the following, order matters
  
    (,(rx word-start
-         (group (or "(exit)"))
+         (group (or "(end)"))
          word-end)
-     (1 'return-stack-exit-face))
+     (1 'return-stack-end-face))
 
    (,(rx word-start
          (group (one-or-more "-"))
