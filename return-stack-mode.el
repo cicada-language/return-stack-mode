@@ -476,7 +476,15 @@
          (group (one-or-more "-"))
          word-end)
      (1 'return-stack-line-face))
-   
+
+   (,(rx (seq (group "[")
+              (group "@")
+              (group "]")
+              ))
+     (1 'return-stack-bar-ket-face)
+     (2 'return-stack-the-jo-face)
+     (3 'return-stack-bar-ket-face))
+
    (,(rx (seq (group "[")
               (zero-or-more (in (0 . 32) 127))
               (group (one-or-more (not (in (0 . 32) 127))))
