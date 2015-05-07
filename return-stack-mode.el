@@ -509,7 +509,7 @@
 
 
 ;;;###autoload
-(add-to-list 'auto-mode-alist '("\\.cn$" . return-stack-mode))
+;; (add-to-list 'auto-mode-alist '("\\.cn$" . return-stack-mode))
 
 (defun return-stack-mode ()
   "major mode for editing return-stack language files"
