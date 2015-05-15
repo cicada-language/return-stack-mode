@@ -17,7 +17,6 @@
 ;; ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 ;; OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-(require 'xyh-emacs-lib)
 (provide 'return-stack-mode)
 
 ;; a syntax-table is a char-table
